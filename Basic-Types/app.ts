@@ -77,8 +77,8 @@ function getData(): object {
 
 // Null
 
-let n: null;
-let n = 'talha'
+// let n: null;
+// let n = 'talha'
 
 // Union 
 
