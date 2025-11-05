@@ -69,3 +69,47 @@ var Car = /** @class */ (function (_super) {
 var ferrari = new Car('la ferrari', 'ferrari');
 console.log(ferrari.carModel);
 ferrari.getModel();
+// Optional Parameter
+var Car1 = /** @class */ (function (_super) {
+    __extends(Car1, _super);
+    function Car1(carModel, carCompany) {
+        var _this = _super.call(this, 'petrol', 'v12') || this;
+        _this.carModel = carModel;
+        _this.carCompany = carCompany;
+        return _this;
+    }
+    return Car1;
+}(Engine));
+// Parameter properties
+var ABCD = /** @class */ (function () {
+    function ABCD(a, b) {
+        this.a = a;
+        this.b = b;
+    }
+    return ABCD;
+}());
+// Getters and Setters
+var User = /** @class */ (function () {
+    function User(_name, age) {
+        this._name = _name;
+        this.age = age;
+    }
+    Object.defineProperty(User.prototype, "getName", {
+        get: function () {
+            return this._name;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(User.prototype, "setName", {
+        set: function (name) {
+            this._name = name;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return User;
+}());
+var user1 = new User('talha', 18);
+user1.setName = 'anonymous';
+console.log(user1.getName);
