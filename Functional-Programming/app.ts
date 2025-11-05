@@ -40,3 +40,7 @@ rest(123,231,23,23,2,32,2,3,4,3,3)
 /// Spread Operator 
 
 console.log(...[1,2,3,4,5])
+
+
+// Function overloading
+
