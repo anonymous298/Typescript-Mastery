@@ -21,3 +21,7 @@
 //     return {data : 'data'}
 // }
 
+
+let username: string = 'talha';
+username = 10;   // ❌ Error: Type 'number' is not assignable to type 'string'
+
