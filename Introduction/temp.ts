@@ -25,3 +25,12 @@
 let username: string = 'talha';
 username = 10;   // ❌ Error: Type 'number' is not assignable to type 'string'
 
+
+
+// Normal JS version like
+let age: any = 18;    // any type is like an enemy to TypeScript
+age = 'talha'
+
+
+
+
